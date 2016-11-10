@@ -12,8 +12,8 @@ def cutGene(filename,genefile,file):
     end = np.zeros((len(filename),1))
     for i in range(len(filename)):
         if filename[i][0] != '':
-            start[i] = filename[i][1]-300
-            end[i] = filename[i][2]
+            start[i] = filename[i][1] - 300
+            end[i] = filename[i][1]
         else: continue
     length = len(start)
     for i in range(length):

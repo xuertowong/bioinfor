@@ -7,5 +7,5 @@ def genomeReverse(fasta,savefile):
     genome = Seq(genome)
     genome = genome.reverse_complement()
     txt = open(savefile,'w')
-    txt.write(genome)
+    txt.write(str(genome))
     txt.close()
