@@ -2,9 +2,8 @@ import numpy as np
 import os 
 import sys
 
-
-addr = sys.argv[0]
-chromTA = sys.argv[1]
+addr = 'D:\yz2'
+chromTA = 'D:\TA2.txt'
 filename = os.listdir(addr)
 for i in range(len(filename)):
     name = filename[i].split('.')
@@ -23,7 +22,7 @@ for i in range(len(filename)):
     a.astype(float)
     b = np.array(b)
     b.astype(float)
-    c = open(str(name+'.wig'),'w')
+    c = open(str(addr+'\\'+name+'.wig'),'w')
     for i in range(len(a)):
         c.write(a[i]+' '+b[i]+'\n')
     
