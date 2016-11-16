@@ -22,7 +22,7 @@ for line in open(fimoName):
     
 for line in open(csvName):
     name2.append(str(line.split(',')[0]))
-    proName.append(str(line.split(',')[5]))
+    proName.append(str(line.split(',')[6]))
     note.append(str(line.split(',')[7]))
 
 for i in range(len(name)):
